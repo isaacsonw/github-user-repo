@@ -1,0 +1,97 @@
+.github-tabs {
+  border-bottom: 1px solid #eaecef;
+  width: 100%;
+  margin: 24px auto 0;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.github-tabs .github-tabs-main {
+  padding: 0 24px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.github-tabs nav {
+  overflow-y: auto;
+  margin: 0 0 0 auto;
+  text-align: start;
+  width: 75%;
+}
+.github-tabs nav ul {
+  display: inline-flex;
+}
+.github-tabs nav ul li {
+  padding: 8px 16px;
+  flex-wrap: nowrap !important;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: border-bottom-color 0.36s ease-in;
+}
+.github-tabs nav ul .active {
+  border-bottom: 2px solid #f9826c !important;
+}
+.github-tabs nav ul .active a {
+  color: #24292e;
+  font-weight: 600;
+}
+.github-tabs nav ul li:hover {
+  border-bottom: 2px solid #d1d5da;
+  position: relative;
+}
+.github-tabs nav ul li a {
+  color: #24292e;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.github-tabs nav ul li a .repo-count {
+  display: inline-block;
+  color: #24292e;
+  background: rgba(209, 213, 218, 0.5);
+  border-radius: 2em;
+  line-height: 18px;
+  padding: 0 6px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid transparent;
+  min-width: 20px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* style for packages icon */
+.github-tabs nav ul li .packagesicon-wrap {
+  width: 17px;
+  height: 17px;
+  border-radius: 0;
+}
+.github-tabs nav ul li .packagesicon-wrap svg {
+  stroke: #959da5;
+}
+
+@media (max-width: 765px) {
+  .github-tabs {
+    margin-top: 0;
+  }
+  .github-tabs .github-tabs-main {
+    padding: 0 8px;
+  }
+  .github-tabs nav {
+    width: 100%;
+  }
+  .github-tabs nav ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .github-tabs nav ul li > div {
+    display: none;
+  }
+  .github-tabs nav ul li > a {
+    padding: 0;
+  }
+}
